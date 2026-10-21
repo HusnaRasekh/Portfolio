@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Husna Rasekh, Computer Science student focused on data science, machine learning, and analytics.">
+<title>Husna Rasekh — Data Science & AI</title>
+<style>
+:root{--bg:#f7f8fc;--paper:#fff;--ink:#172033;--muted:#68738a;--line:#e6e9f1;--accent:#5a55e7;--accent2:#8d7cf6;--soft:#eeedff;--teal:#dff7f2;--shadow:0 18px 50px rgba(28,34,67,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(247,248,252,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(230,233,241,.8)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.08rem}.brand span{color:var(--accent)}.navlinks{display:flex;gap:27px;align-items:center;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--accent)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--accent);color:white;padding:12px 18px;border-radius:12px;font-weight:700;border:1px solid var(--accent);transition:.2s}.nav-cta:hover,.button:hover{transform:translateY(-2px);box-shadow:0 9px 22px #5a55e733}.button.secondary{background:white;color:var(--ink);border-color:var(--line)}.menu{display:none;border:1px solid var(--line);background:white;border-radius:10px;padding:8px 11px;font-size:1.2rem}
+.hero{padding:92px 0 76px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #dcdafa;background:#f0efff;color:#4c47cb;border-radius:99px;padding:7px 12px;font-size:.8rem;font-weight:750;letter-spacing:.03em}.dot{width:7px;height:7px;border-radius:50%;background:#38b89b}.hero h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.04;letter-spacing:-.065em;margin:23px 0 20px;max-width:700px}.hero h1 .gradient{background:linear-gradient(110deg,var(--accent),#a06be9);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.12rem;color:var(--muted);max-width:590px;margin:0 0 29px}.actions{display:flex;gap:12px;flex-wrap:wrap}.mini-note{margin-top:25px;font-size:.86rem;color:var(--muted)}.visual{position:relative;min-height:420px;display:grid;place-items:center}.orb{position:absolute;width:340px;height:340px;border-radius:50%;background:linear-gradient(145deg,#e5e3ff,#d9f6f0);filter:blur(1px)}.code-card{position:relative;width:min(390px,100%);background:#171a2c;color:#e9eaff;border-radius:22px;padding:24px;box-shadow:0 28px 65px #25294a30;transform:rotate(2deg)}.windowbar{display:flex;gap:6px;margin-bottom:24px}.windowbar i{width:8px;height:8px;border-radius:50%;background:#ff7f83}.windowbar i:nth-child(2){background:#f6c96c}.windowbar i:nth-child(3){background:#58d4ac}.code-label{color:#929bb9;font-size:.75rem;margin-bottom:9px}.code-title{font-size:1.15rem;font-weight:750;margin-bottom:18px}.code-line{display:flex;gap:12px;font: .86rem/2.1 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap}.ln{color:#65708f}.purple{color:#c5a3ff}.green{color:#87e7c5}.yellow{color:#ffd68b}.float-chip{position:absolute;background:white;border:1px solid var(--line);box-shadow:var(--shadow);padding:12px 15px;border-radius:14px;font-weight:750;font-size:.87rem}.chip-one{top:48px;right:0}.chip-two{bottom:40px;left:-12px}.chip-icon{display:inline-grid;place-items:center;background:var(--soft);color:var(--accent);width:30px;height:30px;border-radius:9px;margin-right:8px}
+.section{padding:78px 0}.section-head{max-width:650px;margin-bottom:35px}.kicker{color:var(--accent);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}.section h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;line-height:1.12;margin:10px 0 14px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}.about-card{background:linear-gradient(145deg,#efeeff,#e5f8f4);border-radius:24px;padding:30px;min-height:250px}.monogram{width:74px;height:74px;display:grid;place-items:center;border-radius:22px;background:var(--accent);color:white;font-size:1.5rem;font-weight:850;letter-spacing:-.06em;margin-bottom:23px}.about-card h3{margin:0 0 8px;font-size:1.3rem}.about-card p{margin:0;color:#5d6680}.about-copy p{color:var(--muted);margin:0 0 16px}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}.fact{background:white;border:1px solid var(--line);border-radius:14px;padding:14px}.fact strong{display:block;font-size:.95rem}.fact span{font-size:.82rem;color:var(--muted)}
+.skills{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.skill{border:1px solid var(--line);border-radius:17px;padding:20px;background:#fff;transition:.2s}.skill:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.skill .symbol{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--soft);color:var(--accent);font-weight:850;margin-bottom:14px}.skill h3{font-size:1rem;margin:0 0 5px}.skill p{font-size:.85rem;color:var(--muted);margin:0}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}.project:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.project-art{height:175px;padding:22px;display:flex;align-items:flex-end;position:relative;overflow:hidden}.art-one{background:linear-gradient(135deg,#e9e7ff,#d8e7ff)}.art-two{background:linear-gradient(135deg,#d9f7ef,#e7f8d9)}.art-three{background:linear-gradient(135deg,#ffe8d8,#f5dfff)}.art-label{font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#454b77;position:relative;z-index:2}.chart-bars{position:absolute;right:23px;top:25px;display:flex;align-items:flex-end;gap:7px;height:110px}.chart-bars i{display:block;width:18px;border-radius:6px 6px 2px 2px;background:#7169e9}.chart-bars i:nth-child(1){height:35%}.chart-bars i:nth-child(2){height:63%;background:#8f86f5}.chart-bars i:nth-child(3){height:48%;background:#5d58d5}.chart-bars i:nth-child(4){height:88%;background:#a69eff}.chart-bars i:nth-child(5){height:72%;background:#6d67e3}.dashboard{position:absolute;right:18px;top:24px;width:185px;height:115px;background:#ffffffbd;border:1px solid #ffffffd9;border-radius:12px;padding:12px}.dashline{height:7px;background:#b9e9dc;border-radius:8px;margin-bottom:8px;width:75%}.dashline:nth-child(2){width:52%}.dashline:nth-child(3){width:89%}.dashline:nth-child(4){width:64%}.margin-graphic{position:absolute;right:25px;top:18px;width:135px;height:135px;border:2px dashed #a28bca;border-radius:50%;display:grid;place-items:center}.margin-graphic:before{content:"";width:70px;height:70px;border-radius:50%;background:#a28bca30;border:2px solid #8f6fc5}.margin-graphic:after{content:"";position:absolute;width:170px;height:2px;background:#8f6fc5;transform:rotate(-35deg)}.project-body{padding:23px;display:flex;flex-direction:column;flex:1}.project-meta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.77rem;margin-bottom:12px}.project h3{margin:0 0 9px;font-size:1.18rem;letter-spacing:-.025em}.project p{margin:0;color:var(--muted);font-size:.91rem}.tags{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.tag{font-size:.75rem;background:#f1f2f8;color:#555f78;border-radius:7px;padding:5px 8px;font-weight:700}.project-link{margin-top:auto;color:var(--accent);font-weight:800;font-size:.88rem;padding-top:8px}
+.education-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu{background:white;border:1px solid var(--line);border-radius:18px;padding:23px;display:flex;gap:15px}.edu-icon{flex:0 0 44px;height:44px;display:grid;place-items:center;background:var(--soft);border-radius:13px;color:var(--accent);font-weight:900}.edu h3{margin:0 0 5px;font-size:1rem}.edu p{margin:0;color:var(--muted);font-size:.88rem}
+.contact{padding:78px 0 88px}.contact-panel{background:#191c31;color:white;border-radius:28px;padding:clamp(28px,6vw,58px);display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;position:relative;overflow:hidden}.contact-panel:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff15;border-radius:50%;right:-100px;top:-150px;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05}.contact .kicker{color:#aaa4ff}.contact h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.05em;line-height:1.12;margin:12px 0}.contact p{color:#c0c4d8;max-width:520px}.contact-actions{display:flex;flex-direction:column;gap:11px;position:relative;z-index:1}.contact-actions a{border:1px solid #ffffff2b;padding:13px 15px;border-radius:12px;color:white;font-weight:700}.contact-actions a:hover{background:#ffffff12}.contact-actions .primary{background:var(--accent);border-color:var(--accent)}
+footer{padding:23px 0;color:var(--muted);font-size:.84rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:23px}.footer-inner strong{color:var(--ink)}
+@media(max-width:850px){.hero-grid,.about-grid,.contact-panel{grid-template-columns:1fr}.hero{padding-top:65px}.visual{min-height:360px;max-width:500px;width:100%;margin:auto}.project-grid{grid-template-columns:1fr 1fr}.skill-grid{grid-template-columns:repeat(2,1fr)}.contact-actions{max-width:400px}.navlinks{gap:15px}}
+@media(max-width:600px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.nav-cta{display:none}.menu{display:block}.hero{padding:52px 0 55px}.hero-grid{gap:20px}.hero h1{font-size:3.15rem}.visual{min-height:330px}.orb{width:275px;height:275px}.code-card{padding:19px}.chip-one{right:-2px;top:15px}.chip-two{left:-2px;bottom:12px}.section{padding:58px 0}.project-grid,.education-grid{grid-template-columns:1fr}.skill-grid{gap:10px}.skill{padding:15px}.facts{grid-template-columns:1fr 1fr}.contact{padding:55px 0}.contact-panel{padding:28px 22px}.footer-inner{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">HR<span>.</span></a>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#projects">Explore my work <span>↗</span></a>
+    <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> DATA SCIENCE · MACHINE LEARNING · ANALYTICS</div>
+      <h1>Turning data into <span class="gradient">clearer decisions.</span></h1>
+      <p class="lead">Hi, I’m <strong>Husna Rasekh</strong> — a Computer Science student focused on data science, machine learning, and analytics. I enjoy exploring data, building models, and translating results into useful insights.</p>
+      <div class="actions"><a class="button" href="#projects">View my projects <span>↗</span></a><a class="button secondary" href="#about">More about me</a></div>
+      <p class="mini-note">Curious by nature. Analytical by approach. Always learning.</p>
+    </div>
+    <div class="visual" aria-label="Decorative data science illustration">
+      <div class="orb"></div>
+      <div class="code-card">
+        <div class="windowbar"><i></i><i></i><i></i></div>
+        <div class="code-label">husna / data-notebook</div>
+        <div class="code-title">A data-driven mindset</div>
+        <div class="code-line"><span class="ln">01</span><span><span class="purple">import</span> pandas <span class="purple">as</span> pd</span></div>
+        <div class="code-line"><span class="ln">02</span><span><span class="purple">from</span> sklearn <span class="purple">import</span> metrics</span></div>
+        <div class="code-line"><span class="ln">03</span><span>data = pd.<span class="yellow">read_csv</span>(<span class="green">"data.csv"</span>)</span></div>
+        <div class="code-line"><span class="ln">04</span><span>insights = <span class="yellow">explore</span>(data)</span></div>
+        <div class="code-line"><span class="ln">05</span><span><span class="purple">print</span>(<span class="green">"Find the signal."</span>)</span></div>
+      </div>
+      <div class="float-chip chip-one"><span class="chip-icon">✳</span>Machine Learning</div>
+      <div class="float-chip chip-two"><span class="chip-icon">▥</span>Data Visualization</div>
+    </div>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">A little about me</div><h2>Curiosity meets problem-solving.</h2><p>I’m building a strong foundation in data science by combining technical learning with practical projects.</p></div>
+    <div class="about-grid">
+      <div class="about-card"><div class="monogram">HR</div><h3>Husna Rasekh</h3><p>Computer Science · Data Science focus</p></div>
+      <div class="about-copy">
+        <p>I study Computer Science at the American University of Afghanistan, with a focus on data science. My interests include machine learning, statistical thinking, data analysis, and using technology to answer practical questions.</p>
+        <p>Through hands-on projects, I’ve practiced preparing datasets, exploring patterns, training and evaluating models, and communicating findings through visualizations. I’m especially interested in continuing to grow in AI and applying analytical skills to real-world problems.</p>
+        <div class="facts"><div class="fact"><strong>Machine Learning</strong><span>Model building & evaluation</span></div><div class="fact"><strong>Data Analytics</strong><span>Patterns, metrics & insights</span></div><div class="fact"><strong>Practical Projects</strong><span>Learning by building</span></div><div class="fact"><strong>Growth Mindset</strong><span>Always improving</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section skills" id="skills">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Technical toolkit</div><h2>Skills I’m building and applying.</h2><p>A practical toolkit for working with data, creating models, and communicating results.</p></div>
+    <div class="skill-grid">
+      <div class="skill"><div class="symbol">Py</div><h3>Python</h3><p>Pandas, NumPy, data cleaning, analysis, and visualization.</p></div>
+      <div class="skill"><div class="symbol">SQL</div><h3>SQL & Databases</h3><p>Querying, filtering, grouping, and working with structured data.</p></div>
+      <div class="skill"><div class="symbol">ML</div><h3>Machine Learning</h3><p>Regression, classification, KNN, decision trees, K-Means, and SVM.</p></div>
+      <div class="skill"><div class="symbol">▥</div><h3>Power BI</h3><p>Dashboards, data modeling, DAX practice, and business reporting.</p></div>
+      <div class="skill"><div class="symbol">∑</div><h3>Statistics & Math</h3><p>Correlation, model metrics, evaluation, and analytical reasoning.</p></div>
+      <div class="skill"><div class="symbol">▤</div><h3>Excel</h3><p>Data organization, analysis, and spreadsheet-based reporting.</p></div>
+      <div class="skill"><div class="symbol">◉</div><h3>Data Visualization</h3><p>Charts and visual summaries that help explain patterns.</p></div>
+      <div class="skill"><div class="symbol">AI</div><h3>AI Foundations</h3><p>Developing knowledge of neural networks and deep learning.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Selected work</div><h2>Projects that turn learning into practice.</h2><p>These projects reflect my hands-on learning across machine learning, analytics, and model implementation.</p></div>
+    <div class="project-grid">
+      <article class="project">
+        <div class="project-art art-one"><span class="art-label">Predictive analytics</span><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="project-body"><div class="project-meta"><span>MACHINE LEARNING</span><span>01 / 03</span></div><h3>Student Performance Analysis</h3><p>Explored student-related factors and built machine learning models to predict exam scores and classify pass status. Practiced preprocessing, train/test splitting, and evaluating model performance.</p><div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Model Evaluation</span></div><a class="project-link" href="#contact">Ask me about this project ↗</a></div>
+      </article>
+      <article class="project">
+        <div class="project-art art-two"><span class="art-label">Business intelligence</span><div class="dashboard"><div class="dashline"></div><div class="dashline"></div><div class="dashline"></div><div class="dashline"></div></div></div>
+        <div class="project-body"><div class="project-meta"><span>DATA ANALYTICS</span><span>02 / 03</span></div><h3>Power BI Retail Dashboard</h3><p>Designed a retail analysis workflow focused on sales, profitability, customers, product performance, regional results, and monthly trends to support business decisions.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Data Modeling</span><span class="tag">Business Insights</span></div><a class="project-link" href="#contact">Ask me about this project ↗</a></div>
+      </article>
+      <article class="project">
+        <div class="project-art art-three"><span class="art-label">Machine learning</span><div class="margin-graphic"></div></div>
+        <div class="project-body"><div class="project-meta"><span>MACHINE LEARNING</span><span>03 / 03</span></div><h3>Machine Learning Projects</h3><p>Applied and explored multiple machine learning algorithms, including Linear Regression, Logistic Regression, K-Nearest Neighbors (KNN), Decision Trees, K-Means Clustering, and Support Vector Machines (SVM). Practiced preprocessing, feature scaling, model evaluation, and interpreting results.</p><div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Classification</span><span class="tag">Regression</span><span class="tag">Clustering</span></div><a class="project-link" href="#contact">Ask me about these projects ↗</a></div>
+      </article>
+    </div>
+    <p class="mini-note">Project code and report links can be added once your GitHub repositories or published dashboards are ready.</p>
+  </div>
+</section>
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Education & development</div><h2>Learning with purpose.</h2><p>Building fundamentals and strengthening them through projects and practice.</p></div>
+    <div class="education-grid">
+      <div class="edu"><div class="edu-icon">⌂</div><div><h3>American University of Afghanistan</h3><p>Computer Science studies, with a concentration in Data Science.</p></div></div>
+      <div class="edu"><div class="edu-icon">↗</div><div><h3>Continuous technical learning</h3><p>Focused on Python, SQL, statistics, machine learning algorithms, and deep learning foundations.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap"><div class="contact-panel">
+    <div><div class="kicker">Let’s connect</div><h2>Have a project or opportunity in mind?</h2><p>I’m interested in connecting with people working in data science, AI, analytics, and technology. Reach out to discuss projects, internships, or opportunities to learn and collaborate.</p></div>
+    <div class="contact-actions">
+      <a class="primary" href="mailto:YOUR_EMAIL@example.com" id="emailLink">Email me ↗</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Add my LinkedIn profile ↗</a>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">Explore GitHub ↗</a>
+    </div>
+  </div></div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> <strong>Husna Rasekh</strong>. Built with curiosity.</span><span>Data Science · Machine Learning · Analytics</span></div></footer>
+<script>
+const menu=document.getElementById('menu'), links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
